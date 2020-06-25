@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help</title>
+    <style>
+        .container{
+            color: brown;
+            display: inline;
+            font: bold;
+            border: 2 solid black;
+        }
+    </style>
+</head>
+<body>
+    {{>header}}
+    <div class="container">
+        <h2>help page</h2>
+    </div>
+        <p>hello {{name}} your problem is {{problem}}</p>
+        {{>footer}}
+</body>
+</html>

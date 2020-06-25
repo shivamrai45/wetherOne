@@ -1,0 +1,11 @@
+#navbar {
+    display: flex;
+    position: relative;
+}
+#navbar ul{
+    display: flex;
+}
+#logo img{
+    height: 100px;
+    width: 100px;
+}
