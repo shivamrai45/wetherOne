@@ -1,11 +1,78 @@
-#navbar {
+*{
+    margin: 0px;
+    padding: 0px;
+    color: rgb(58, 36, 36);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* navigation bar */
+#navbar{
     display: flex;
-    position: relative;
+    /* background-color:grey; */
+    align-items: center;
+    top: 0px;
+    position: sticky;
+    background-color: black;
+}
+navbar:before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    
 }
 #navbar ul{
     display: flex;
 }
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul a{
+    color: blanchedalmond;
+    text-decoration: none;
+    margin: 20px;
+    padding: 10px 40px;
+}
+#navbar ul a:hover{
+    border: 1px solid rgb(87, 82, 82);
+    border-radius: 20px;
+    background-color: rgb(87, 84, 84);
+
+}
+#logo{
+    margin: 10px 30px;
+}
 #logo img{
-    height: 100px;
-    width: 100px;
+    height: 5em;
+    width: 5em;
+}
+#weatherform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background: url('../../templates/images/trees-and-grass-field-under-cloudy-sky-during-daytime-186980.jpg');
+    height: 70%;
+    width: 100%;
+}
+#weatherform button{
+    font: bold;
+    margin: 20px;
+}
+#title{
+    font-size: 2rem;
+    color: chocolate;
+    padding: 40px;
+    margin: 40px;
+}
+
+p{
+    /* background-color: rgb(50, 30, 230); */
+    margin-top: 33%;
+    color: #000000;
 }

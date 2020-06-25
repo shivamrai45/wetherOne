@@ -11,6 +11,8 @@ const viewspath = path.join(__dirname,'../templates/views')
 const partialpaths = path.join(__dirname,'../templates/partials')
 
 const app = express()
+// port provided to us by heroku
+const port = process.env.PORT || 3000
 
 // hbs settlement and views location
 app.set('view engine', 'hbs')
@@ -84,6 +86,6 @@ app.get('*',(req,res)=>{
     })
 })
 
-app.listen(3000,()=>{
-    console.log('the server is successfully running')
+app.listen(port,()=>{
+    console.log('the server is successfully running on port '+port)
 })
