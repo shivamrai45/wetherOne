@@ -17,5 +17,5 @@ const weatherform = document.querySelector('form')
 weatherform.addEventListener('submit',(e)=>{
     e.preventDefault()
 
-    console.log('testing')
+    console.log('testing  ')
 })
